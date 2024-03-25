@@ -1,0 +1,64 @@
+.container {
+    width: 800px;
+    height: 100vh;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.chance-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.chance-container .chance {
+    width: 120px;
+    height: 120px;
+    border: 7px solid transparent;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.chance-container .chance.rock {
+    background-color: #deb887;
+}
+
+.chance-container .chance.paper {
+    background-color: #81a6ea;
+}
+
+.chance-container .chance.scissor {
+    background-color:#ff8f8f;
+}
+
+.chance-container .chance:hover {
+    border: 7px solid black;
+}
+
+.score-board {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.result {
+    display: none;
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.result.pass {
+    background: #107a3f;
+}
+
+.result.fail {
+    background: #d42e2e;
+}
